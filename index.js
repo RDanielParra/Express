@@ -13,17 +13,17 @@ app.get('/clientes', cors(),(req, res)=>{
 
 app.get('/alumnos', (req, res) => {
   console.log(req.query);
-  res.send('Hello Worlld!');
+  res.send('Hello Worlld! alumnos');
 });
 
 app.get('/docentes/:control', (req, res) => {
   console.log(req.params);
-  res.send('Hello World!');
+  res.send('Hello World! control');
 });
 
 app.post('/directivos', (req, res) => {
   console.log(req.body);
-  res.send('Hello World!');
+  res.send('Hello World! directivos');
 });
 
 app.listen(PORT, () => {
